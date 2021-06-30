@@ -1,1 +1,5 @@
-console.log("Testing");
+import "./style.css"
+
+import homeDisplay from "./home"
+
+homeDisplay();
