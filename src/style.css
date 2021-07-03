@@ -7,41 +7,82 @@
 header {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 1.2rem 0 1.2rem;
+	padding: 1rem 2rem 3rem 2rem;
 }
 
 .branding {
 	display: flex;
 	width: 10rem;
+	position: relative;
+	left: -20px;
 }
 
 #logo {
-	width: 2rem;
+	width: 3rem;
+	top: 10px;
+	position: relative;
+	left: 15px;
 }
 
-h1 {
-	font-feature-settings: "salt" on;
-	font-weight: 500;
-	font-style: normal;
+#brand {
+	width: 8rem;
 }
 
 ul {
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
-	cursor: pointer;
-	padding-top: 2rem;
+	padding: 1rem 0 0 0;
 }
 
 li {
 	display: inline;
-	margin-left: 2rem;
+	margin-left: 4rem;
+	cursor: pointer;
+	font-weight: 600;
+	border-bottom: 4px solid transparent;
+	transition: 0.25s;
 }
 
-li:hover {
-	border-bottom: 3px solid black;
+li:hover,
+.active {
+	border-bottom: 4px solid black;
 }
 
-img {
+.main {
+	display: flex;
 	width: 100%;
+	margin-top: 2rem;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.home-sample {
+	object-fit: cover;
+	width: 20rem;
+	border-radius: 20px;
+	height: 25rem;
+	margin: 0px 2rem 0 2rem;
+	box-shadow: 0px 18px 23px 4px rgba(0, 0, 0, 0.16);
+	transition: 0.5s;
+}
+
+.home-sample:hover {
+	transform: scale(1.05);
+}
+
+.text-container {
+	margin: 0 2rem 0 2rem;
+	width: 25rem;
+}
+
+.text-container h2 {
+	font-size: 2.5rem;
+	font-weight: 900;
+	margin: 0;
+}
+
+.text-container p {
+	font-weight: 450;
+	line-height: 1.5rem;
 }
