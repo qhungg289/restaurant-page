@@ -20,7 +20,7 @@ let navItems = document.getElementsByClassName("nav-link")
 navItems[0].classList.add("active");
 
 navItems[0].onclick = () => {
-    document.getElementById("main").innerHTML = "";
+    main.innerHTML = "";
     navItems[0].classList.add("active");
     navItems[1].classList.remove("active");
     navItems[2].classList.remove("active");
@@ -28,7 +28,7 @@ navItems[0].onclick = () => {
 }
 
 navItems[1].onclick = () => {
-    document.getElementById("main").innerHTML = "";
+    main.innerHTML = "";
     navItems[1].classList.add("active");
     navItems[0].classList.remove("active");
     navItems[2].classList.remove("active");
@@ -36,7 +36,7 @@ navItems[1].onclick = () => {
 }
 
 navItems[2].onclick = () => {
-    document.getElementById("main").innerHTML = "";
+    main.innerHTML = "";
     navItems[2].classList.add("active");
     navItems[0].classList.remove("active");
     navItems[1].classList.remove("active");
