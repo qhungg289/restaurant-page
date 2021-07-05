@@ -125,16 +125,33 @@ li:hover,
 #food-slide-container {
 	margin: auto;
 	display: flex;
+	position: relative;
+	justify-content: center;
 }
 
 #prev-btn,
 #next-btn {
 	border: none;
-	background: transparent;
+	border-radius: 0.5rem;
+	background: white;
 	width: 4rem;
+	height: 5rem;
 	cursor: pointer;
 	font-size: 3rem;
+	line-height: 0;
 	transition: 0.4s;
+	box-shadow: 0px 18px 23px 4px rgb(0 0 0 / 16%);
+	position: absolute;
+	top: 30%;
+	z-index: 2;
+}
+
+#prev-btn {
+	left: 0;
+}
+
+#next-btn {
+	right: 0;
 }
 
 #prev-btn:hover {
@@ -257,11 +274,8 @@ li:hover,
 	}
 
 	#food-slide-container {
-		display: grid;
-		grid-template-areas:
-			"slide slide"
-			"prev next";
 		width: 100%;
+		position: relative;
 	}
 
 	#food-slide-container .food-images {
@@ -271,22 +285,29 @@ li:hover,
 		margin: auto;
 	}
 
-	#food-slide-container .food-slide {
-		grid-area: slide;
-	}
-
 	#food-slide-container .food-slide p {
 		font-size: 1.1rem;
 	}
 
+	#prev-btn,
+	#next-btn {
+		width: 16%;
+		height: 12%;
+		position: absolute;
+		top: 34%;
+		line-height: 0;
+		z-index: 2;
+		background-color: white;
+		border-radius: 0.5rem;
+		box-shadow: 0px 18px 23px 4px rgba(0, 0, 0, 0.16);
+	}
+
 	#prev-btn {
-		grid-area: prev;
-		width: 100%;
+		left: 2%;
 	}
 
 	#next-btn {
-		grid-area: next;
-		width: 100%;
+		left: 82%;
 	}
 
 	#prev-btn:hover,
