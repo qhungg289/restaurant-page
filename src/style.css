@@ -294,6 +294,11 @@ li:hover,
 		transform: none;
 	}
 
+	#prev-btn:active,
+	#next-btn:active {
+		transform: scale(0.9);
+	}
+
 	.contact img {
 		width: 85%;
 	}
