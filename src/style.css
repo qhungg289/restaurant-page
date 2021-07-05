@@ -261,11 +261,14 @@ li:hover,
 		grid-template-areas:
 			"slide slide"
 			"prev next";
+		width: 100%;
 	}
 
 	#food-slide-container .food-images {
+		display: block;
 		width: 85%;
 		height: 25rem;
+		margin: auto;
 	}
 
 	#food-slide-container .food-slide {
