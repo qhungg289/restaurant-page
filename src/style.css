@@ -211,3 +211,47 @@ li:hover,
 		opacity: 1;
 	}
 }
+
+/* ===========
+   Responsive 
+  ===========
+*/
+
+@media only screen and (max-width: 800px) {
+	header {
+		flex-direction: column;
+	}
+
+	ul {
+		display: flex;
+		justify-content: flex-start;
+		padding-top: 1.5rem;
+	}
+
+	li {
+		margin: 0 6% 0 0;
+	}
+
+	.main {
+		flex-direction: column;
+		margin-top: 0;
+	}
+
+	.home-sample {
+		width: 85%;
+		height: 14rem;
+	}
+
+	.text-container {
+		width: 85%;
+		margin-top: 2rem;
+	}
+
+	.text-container h2 {
+		font-size: 2rem;
+	}
+
+	.text-container p {
+		font-size: 1.1rem;
+	}
+}
