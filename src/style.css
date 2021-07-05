@@ -102,18 +102,19 @@ li:hover,
 .text-container button {
 	border: 4px solid black;
 	border-radius: 7px;
-	background-color: white;
+	background-color: black;
 	padding: 0.6rem;
 	font-size: 1rem;
 	font-weight: 450;
 	font-family: "Montserrat", sans-serif;
+	color: white;
 	transition: 0.5s;
 	cursor: pointer;
 }
 
 .text-container button:hover {
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: white;
 }
 
 /* ==========
@@ -252,6 +253,49 @@ li:hover,
 	}
 
 	.text-container p {
+		font-size: 1.1rem;
+	}
+
+	#food-slide-container {
+		display: grid;
+		grid-template-areas:
+			"slide slide"
+			"prev next";
+	}
+
+	#food-slide-container .food-images {
+		width: 85%;
+		height: 25rem;
+	}
+
+	#food-slide-container .food-slide {
+		grid-area: slide;
+	}
+
+	#food-slide-container .food-slide p {
+		font-size: 1.1rem;
+	}
+
+	#prev-btn {
+		grid-area: prev;
+		width: 100%;
+	}
+
+	#next-btn {
+		grid-area: next;
+		width: 100%;
+	}
+
+	#prev-btn:hover,
+	#next-btn:hover {
+		transform: none;
+	}
+
+	.contact img {
+		width: 85%;
+	}
+
+	.contact p {
 		font-size: 1.1rem;
 	}
 }
