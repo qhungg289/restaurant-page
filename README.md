@@ -1,5 +1,9 @@
 # restaurant-page
 
-![Screenshot](https://i.imgur.com/jZykPrg.png)
+This was made for learning purpose at **The Odin Project**.
 
-[Live Preview](https://tsuki.netlify.app)
+[Live demo](https://tsuki.netlify.app).
+
+**Preview**:
+
+![Screenshot](./asset/readme-restaurant.png)
